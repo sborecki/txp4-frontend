@@ -5,7 +5,7 @@ import { MainComponent } from './main/main.component';
 const routes: Routes = [
 
   { path: '', component: MainComponent },
-  { path: ':playerLogin', component: MainComponent }
+  { path: 'user/:playerLogin', component: MainComponent }
 ];
 
 @NgModule({
@@ -13,8 +13,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)]
 })
 export class AppRoutingModule {
-
-
-
 
 }
