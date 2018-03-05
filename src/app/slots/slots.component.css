@@ -1,0 +1,35 @@
+.slots {
+  margin: 0em auto;
+  list-style-type: none;
+  background-color: #607D8B;
+  padding: 0.5em;
+  border-radius: 1em;
+  width: 29em;
+  overflow: auto;
+  align-content: center;
+}
+
+  .slots ul {
+    list-style-type: none;
+    color: #607D8B;
+  }
+
+  .slots li {
+    background-color: #527282;
+    border-radius: 0.5em;
+    float: left;
+    margin: 0.2em;
+    height: 9em;
+    width: 9em;
+  }
+
+  .slots img {
+    height: 8em;
+    width: 8em;
+    padding: 0.5em 0.5em;
+  }
+
+  .slots li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+  }

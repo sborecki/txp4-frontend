@@ -1,0 +1,13 @@
+<app-toolbar [player]="player">></app-toolbar>
+<div *ngIf="player">
+  <app-inventory [(player)]="player"></app-inventory>
+  <app-slots [player]="player"></app-slots>
+</div>
+<div *ngIf="!player">
+  <p>
+    Nóp! Nie podałeś poprawnych danych logowania!
+  </p>
+  <p>
+    Idź do kemoitusza po linkacza dobrego.
+  </p>
+</div>

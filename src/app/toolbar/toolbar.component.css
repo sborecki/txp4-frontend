@@ -1,0 +1,19 @@
+/* inventoryComponent's private CSS styles */
+.toolbar {
+  display: block;
+  background-color: #111111;
+  color: #DDDDDD;
+  padding: 0.5em;
+  margin: 0em;
+  width: 100%;
+  text-align: right;
+}
+
+  .toolbar .title {
+    font-weight: 900;
+    float: left;
+  }
+
+  .toolbar .loggedinfo {
+    float: right;
+  }

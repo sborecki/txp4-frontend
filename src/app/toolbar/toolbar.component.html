@@ -1,0 +1,5 @@
+<div class="toolbar">
+  <div class="title">{{title}}</div>
+  <div *ngIf="player" class="logininfo">| Logged as: {{player.playerlogin}} | {{player.txp}} TXP</div>
+  <div *ngIf="!player"  class="logininfo">| Not logged</div>
+</div>

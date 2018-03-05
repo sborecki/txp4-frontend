@@ -1,0 +1,41 @@
+/* inventoryComponent's private CSS styles */
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+
+.inventory {
+  margin: 2em 2em 2em 2em;
+  list-style-type: none;
+  background-color: #607D8B;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  width: auto;
+  overflow: auto;
+}
+
+  .inventory ul {
+    list-style-type: none;
+    color: #607D8B;
+  }
+
+  .inventory li {
+    float: left;
+    margin: 0.5em;
+    padding: 0.1em 0.1em;
+    height: 5.5em;
+    width: 5.5em;
+    border-radius: 0.2em;
+  }
+
+  .inventory img {
+    height: 5em;
+    width: 5em;
+    padding: 0.25em 0.25em;
+  }
+
+    .inventory li:hover {
+      color: #607D8B;
+      background-color: #DDD;
+    }
+

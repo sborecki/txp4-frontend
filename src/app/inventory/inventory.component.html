@@ -1,0 +1,6 @@
+<h2>Inventory</h2>
+<ul class="inventory">
+  <li *ngFor="let inventoryslot of player.inventory; let i = index" (click)="equip(i)">
+    <img src="assets/{{inventoryslot.imageuri}}.png" [matTooltip]=getShortTooltip(inventoryslot)/>
+  </li>
+</ul>
