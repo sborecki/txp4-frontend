@@ -15,7 +15,6 @@ export class PlayerService {
   constructor(private http: HttpClient) { }
 
   getPlayer(playerLogin: string): Observable<Player> {
-    console.info("Rquesting API: " + this.getFullUrl + playerLogin);
     return this.http.get<Player>(this.getFullUrl + playerLogin)
       .pipe(
         catchError(this.handleError('getPlayerFailed', null))
@@ -23,7 +22,6 @@ export class PlayerService {
   }
 
   postEquip(playerLogin: string, index: number): Observable<any> {
-    console.info("Rquesting API: " + this.equipUrl + playerLogin);
     return this.http.post(this.equipUrl + playerLogin, { perfPartIndex: index })
       .pipe(
         catchError(this.handleError('equipFailed', null))
