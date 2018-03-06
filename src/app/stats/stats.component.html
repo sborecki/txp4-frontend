@@ -1,0 +1,36 @@
+<div class="stats">
+  <div *ngIf="!hoveredPart">
+    <p>Select a performance part...</p>
+  </div>
+  <div *ngIf="hoveredPart">
+    <p>Selected:</p>
+    <div class="part">
+      <h3>{{hoveredPart.vendor}}</h3>
+      <h6>{{hoveredPart.perfparttype}} (Tier: {{hoveredPart.tier}})</h6>
+      <div><span>Maximum speed: </span>{{hoveredPart.maxspeed}}%</div>
+      <div><span>Acceleration: </span>{{hoveredPart.accel}}%</div>
+      <div><span>Handling: </span>{{hoveredPart.steering}}%</div>
+      <div><span>Breaking: </span>{{hoveredPart.breaking}}%</div>
+      <div><span>Turbo strength: </span>{{hoveredPart.turbostrength}}%</div>
+      <div><span>Grip: </span>{{hoveredPart.grip}}%</div>
+      <div><span>Vehicle mass: </span>{{hoveredPart.grav}}%</div>
+      <div><span>Magic find: </span>{{hoveredPart.perfpartrarity}}%</div>
+    </div>
+  </div>
+  <div *ngIf="getCurrent()">
+    <hr />
+    <p>Currently equipped:</p>
+    <div class="part">
+      <h3>{{getCurrent().vendor}}</h3>
+      <h6>{{getCurrent().perfparttype}} (Tier: {{getCurrent().tier}})</h6>
+      <div><span>Maximum speed: </span>{{getCurrent().maxspeed}}%</div>
+      <div><span>Acceleration: </span>{{getCurrent().accel}}%</div>
+      <div><span>Handling: </span>{{getCurrent().steering}}%</div>
+      <div><span>Breaking: </span>{{getCurrent().breaking}}%</div>
+      <div><span>Turbo strength: </span>{{getCurrent().turbostrength}}%</div>
+      <div><span>Grip: </span>{{getCurrent().grip}}%</div>
+      <div><span>Vehicle mass: </span>{{getCurrent().grav}}%</div>
+      <div><span>Magic find: </span>{{getCurrent().perfpartrarity}}%</div>
+    </div>
+  </div>
+  </div>

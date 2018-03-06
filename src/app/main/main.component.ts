@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Player } from '../player';
 import { PlayerService } from '../player.service';
 import { ActivatedRoute } from '@angular/router';
+import { PerfPart } from '../perf-part';
 
 @Component({
   selector: 'app-main',
@@ -11,13 +12,15 @@ import { ActivatedRoute } from '@angular/router';
 export class MainComponent implements OnInit {
 
   public player: Player;
+  public hoveredPart: PerfPart;
 
   constructor(
     private route: ActivatedRoute,
     private playerService: PlayerService) { }
 
   ngOnInit() {
-      this.getPlayer();
+    this.getPlayer();
+    this.hoveredPart = null;
   }
 
   getPlayer(): void {

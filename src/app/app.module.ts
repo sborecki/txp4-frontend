@@ -12,6 +12,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { PlayerService } from './player.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { MainComponent } from './main/main.component';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MainComponent } from './main/main.component';
     InventoryComponent,
     SlotsComponent,
     ToolbarComponent,
-    MainComponent
+    MainComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,

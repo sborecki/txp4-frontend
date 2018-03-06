@@ -1,13 +1,20 @@
 <app-toolbar [player]="player">></app-toolbar>
-<div *ngIf="player">
-  <app-inventory [(player)]="player"></app-inventory>
-  <app-slots [player]="player"></app-slots>
-</div>
-<div *ngIf="!player">
-  <p>
-    Nóp! Nie podałeś poprawnych danych logowania!
-  </p>
-  <p>
-    Idź do kemoitusza po linkacza dobrego.
-  </p>
+<div class="main">
+  <div *ngIf="player" style="width: 100%; display: table;">
+    <div style="width: 80%; display: table-cell;">
+      <app-slots [player]="player" [(hoveredPart)]="hoveredPart"></app-slots>
+      <app-inventory [(player)]="player" [(hoveredPart)]="hoveredPart"></app-inventory>
+    </div>
+    <div style="display: table-cell;">
+      <app-stats [player]="player" [hoveredPart]="hoveredPart"></app-stats>
+    </div>
+  </div>
+  <div *ngIf="!player">
+    <p>
+      Nóp! Nie podałeś poprawnych danych logowania!
+    </p>
+    <p>
+      Idź do kemoitusza po linkacza dobrego.
+    </p>
+  </div>
 </div>

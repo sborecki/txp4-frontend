@@ -1,12 +1,12 @@
 <h2>Equipment slots</h2>
 <ul class="slots">
   <li>
-    <img *ngIf="player.slotengine" src="assets/{{player.slotengine.imageuri}}.png" [matTooltip]=getTooltip(player.slotengine)/>
+    <img *ngIf="player.slotengine" src="assets/{{player.slotengine.imageuri}}.png" (mouseenter)="onHover(player.slotengine)"/>
   </li>
   <li>
-    <img *ngIf="player.slottransmission" src="assets/{{player.slottransmission.imageuri}}.png" [matTooltip]=getTooltip(player.slottransmission)/>
+    <img *ngIf="player.slottransmission" src="assets/{{player.slottransmission.imageuri}}.png" (mouseenter)="onHover(player.slottransmission)"/>
   </li>
   <li>
-    <img *ngIf="player.slottires" src="assets/{{player.slottires.imageuri}}.png" [matTooltip]=getTooltip(player.slottires)/>
+    <img *ngIf="player.slottires" src="assets/{{player.slottires.imageuri}}.png" (mouseenter)="onHover(player.slottires)"/>
   </li>
 </ul>
